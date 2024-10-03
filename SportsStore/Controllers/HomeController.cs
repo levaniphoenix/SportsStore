@@ -7,7 +7,7 @@ namespace SportsStore.Controllers
     public class HomeController : Controller
     {
         private readonly IProductService productService;
-        public int PageSize = 4;
+        private readonly int PageSize = 4;
 
         public HomeController(IProductService productService)
         {

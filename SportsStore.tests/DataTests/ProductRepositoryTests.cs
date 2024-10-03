@@ -52,7 +52,7 @@ namespace SportsStore.tests.DataTests
             await prodcutRepository.AddAsync(product);
             await context.SaveChangesAsync();
 
-            Assert.True(context.Products.Count() == 3);
+            Assert.Equal(3, context.Products.Count());
         }
 
         [Fact]
@@ -65,7 +65,7 @@ namespace SportsStore.tests.DataTests
             await prodcutRepository.DeleteByIdAsync(1);
             await context.SaveChangesAsync();
 
-            Assert.True(context.Products.Count() == 1);
+            Assert.Equal(1,context.Products.Count());
         }
 
         [Fact]

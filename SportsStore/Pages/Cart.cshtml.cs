@@ -11,7 +11,7 @@ namespace SportsStore.Pages
 {
     public class CartModel : PageModel
     {
-        private IProductService productService;
+        private readonly IProductService productService;
 
         public CartModel(IProductService productService, Cart cartService)
         {

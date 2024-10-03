@@ -52,8 +52,6 @@ namespace SportsStore.Infrastructure
                     tag.Attributes["href"] = urlHelper.Action(PageAction,
                     PageUrlValues);
                     
-                    //tag.Attributes["href"] = urlHelper.Action(PageAction,new { productPage = i });
-
                     if (PageClassesEnabled)
                     {
                         tag.AddCssClass(PageClass);

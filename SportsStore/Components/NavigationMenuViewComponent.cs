@@ -5,7 +5,7 @@ namespace SportsStore.Components
 {
     public class NavigationMenuViewComponent : ViewComponent
     {
-        private IProductService productService;
+        private readonly IProductService productService;
 
         public NavigationMenuViewComponent(IProductService productService)
         {
